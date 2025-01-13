@@ -7,6 +7,22 @@ header {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+    position: relative; 
+    background-color: transparent;
+}
+
+header::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 200%; 
+    height: 200%;
+    background-color: #3498db; 
+    transform: translateY(-100%) skewY(-15deg); 
+    transform-origin: center; 
+    z-index: -1;
 }
 
 .header-image,
