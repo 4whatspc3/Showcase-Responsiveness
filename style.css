@@ -68,33 +68,38 @@ header::before {
     max-width: 28px;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
     header {
-        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     }
 
     .header-image,
     .header-about {
-        max-width: 500px;
+        /* max-width: 600px; */
         justify-self: center;
     }
 
     .header-about {
+        padding-top: 10px;
         max-width: 400px;
         transform: translate(15%, -20%);
+        background-color: aliceblue;
     }
 
     .header-image img {
+        position: relative;
+        z-index: 1;
         transform: translate(-100px, 20px);
         max-width: 100%;
     }
 
-    h1, p {
+    .header-about h1, 
+    .header-about p {
         text-align: right;
     }
 
-    h1 {
-        transform: translate(0, -70%);
+    .header-about h1 {
+        transform: translate(0, -40%);
     }
 
     .header-icons img {
@@ -104,7 +109,7 @@ header::before {
 
 @media (max-width: 600px) {
     header {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .header-image,
@@ -115,6 +120,7 @@ header::before {
 
     .header-about {
         transform: translate(0, 0);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .header-image img {
@@ -122,7 +128,8 @@ header::before {
         max-width: 100%;
     }
 
-    h1, p {
+    .header-about h1, 
+    .header-about p {
         text-align: center;
         transform: translate(0, 0);
     }
