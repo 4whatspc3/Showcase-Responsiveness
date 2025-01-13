@@ -29,6 +29,17 @@ header {
     align-self: center;
 }
 
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.header-icons img {
+    max-width: 32px;
+}
+
 @media (max-width: 1250px) {
     header {
         grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
