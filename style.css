@@ -37,7 +37,7 @@ header {
 }
 
 .header-icons img {
-    max-width: 32px;
+    max-width: 28px;
 }
 
 @media (max-width: 1250px) {
@@ -68,6 +68,10 @@ header {
     h1 {
         transform: translate(0, -70%);
     }
+
+    .header-icons img {
+        max-width: 24px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -93,6 +97,14 @@ header {
     h1, p {
         text-align: center;
         transform: translate(0, 0);
+    }
+    
+    .header-icons {
+        justify-content: center;
+    }
+    
+    .header-icons img {
+        max-width: 20px;
     }
     
 }
