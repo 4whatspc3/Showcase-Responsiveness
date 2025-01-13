@@ -29,6 +29,11 @@ header {
     align-self: center;
 }
 
+.header-about span {
+    font-style: italic;
+    font-weight: bold;
+}
+
 .header-icons {
     display: flex;
     justify-content: flex-end;
