@@ -1,6 +1,20 @@
+body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
 header {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.header-image {
+    max-width: 600px;
+    height: auto;
+}
+
+.header-image img {
+    max-width: 100%;
 }
 
 @media (max-width: 1200px) {

@@ -9,7 +9,22 @@
 <body>
     <header>
         <div class="header-image">
-            <picture></picture>
+            <picture>
+                <source 
+                    srcset="./Assets/mobile_vers.png"
+                    media="(max-width: 600px)"
+                />
+
+                <source 
+                    srcset="./Assets/tablet_vers.png"
+                    media="(max-width: 1200px)"
+                />
+
+                <img 
+                    src="./Assets/desktop_vers.png" 
+                    alt="Baianas' typical costume, Salvador, Bahia"
+                />
+            </picture>
         </div>
 
         <div class="header-about">
