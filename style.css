@@ -77,7 +77,7 @@ main {
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .section-title {
@@ -88,6 +88,7 @@ section {
     max-width: 600px;
     height: auto;
     background-color: blueviolet;
+    box-shadow: 10px 10px;
 }
 
 .block {
