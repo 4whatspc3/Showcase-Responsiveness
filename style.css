@@ -98,6 +98,25 @@ section {
     height: auto;
 }
 
+.block-photo {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.block-photo img {
+    max-width: 100%;
+    transform: translateY(-30%);
+}
+
+section div:nth-child(4) .block-photo img,
+section div:nth-child(5) .block-photo img  {
+    transform: translateY(-15%);
+}
+
+section div:nth-child(7) .block-photo img {
+    transform: translateY(-45%);
+}
+
 .block-about {
     padding: 8px 16px;
 }
