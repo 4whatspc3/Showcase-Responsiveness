@@ -136,9 +136,18 @@ section {
     }
 
     .block {
+        display: flex;
+        flex-direction: column;
+
         max-width: 600px;
         height: auto;
     }
+
+    .block-icons img {
+        max-width: 24px;
+    }
+
+
 }
 
 @media (max-width: 600px) {
