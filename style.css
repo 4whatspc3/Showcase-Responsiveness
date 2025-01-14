@@ -117,6 +117,7 @@ section div:nth-child(5) .block-photo img  {
 
 .block-about {
     padding: 8px 16px;
+    background-color: aliceblue;
 }
 
 .block-icons img {
