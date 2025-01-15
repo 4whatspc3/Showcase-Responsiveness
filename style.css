@@ -5,6 +5,7 @@
 body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 10%;
     overflow-x: hidden;
 }
 
@@ -244,6 +245,10 @@ footer {
 }
 
 @media (max-width: 1200px) {
+    body {
+        row-gap: 5%;
+    }
+
     header {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     }
@@ -281,6 +286,10 @@ footer {
         max-width: 24px;
     }
 
+    main {
+        padding-top: 100px;
+    }
+
     section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -304,6 +313,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+
     header {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
@@ -336,6 +346,11 @@ footer {
     
     .header-icons img {
         max-width: 20px;
+    }
+
+    main {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     section {
