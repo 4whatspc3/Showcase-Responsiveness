@@ -130,6 +130,57 @@ section div:nth-child(5) .block-photo img  {
     align-items: center;
 }
 
+/* FOOTER */
+
+footer {
+    padding-top: 20px;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-rows: 600px;
+
+    position: relative; 
+    background-color: #3498db;
+}
+
+.footer-image,
+.footer-about {
+    max-width: 600px;
+    height: auto;
+}
+
+.footer-image{
+    place-self: center start;
+}
+
+.footer-image img {
+    max-width: 100%;
+    text-align: center;
+}
+
+.footer-about {
+    color: white;
+    padding: 0px 24px;
+    place-self: center;
+}
+
+.footer-icons,
+.footer-contact div {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    max-width: 100%;
+}
+
+.footer-icons img {
+    max-width: 32px;
+}
+
+.footer-contact img {
+    max-width: 28px;
+}
+
 @media (max-width: 1200px) {
     header {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
