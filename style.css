@@ -52,7 +52,7 @@ header::before {
 }
 
 .header-about {
-    background-color: white;
+    background-color: aliceblue;
     box-shadow: 10px 10px;
     padding: 0px 24px;
     align-self: center;
@@ -121,7 +121,6 @@ section div:nth-child(5) .block-photo img  {
 
 .block-about {
     padding: 8px 16px;
-    background-color: aliceblue;
 }
 
 .block-icons img {
@@ -132,6 +131,19 @@ section div:nth-child(5) .block-photo img  {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+section div:nth-child(2) .block-about,
+section div:nth-child(5) .block-about {
+    background-color: aliceblue;
+}
+section div:nth-child(3) .block-about,
+section div:nth-child(6) .block-about  {
+    background-color: #f0fff5;
+}
+section div:nth-child(4) .block-about,
+section div:nth-child(7) .block-about {
+    background-color: #fff0f8;
 }
 
 /* FOOTER */
