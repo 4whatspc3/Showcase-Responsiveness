@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+    body {
+        row-gap: 5%;
+    }
+
+    header {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+
+    .header-image,
+    .header-about {
+        justify-self: center;
+    }
+
+    .header-about {
+        margin-top: 10px;
+        padding-top: 10px;
+        max-width: 500px;
+        transform: translate(15%, -20%);
+        background-color: aliceblue;
+    }
+
+    .header-image img {
+        position: relative;
+        z-index: 1;
+        transform: translate(-100px, 20px);
+        max-width: 100%;
+    }
+
+    .header-about h1, 
+    .header-about p {
+        text-align: right;
+    }
+
+    .header-about h1 {
+        transform: translate(-15px, -40%);
+    }
+
+    .header-icons img {
+        max-width: 24px;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-title {
+        grid-column: 1 / 3;
+    }
+
+    .section-title h2::before {
+        width: 15%; 
+    }
+
+    footer {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .footer-image img{
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .header-image,
+    .header-about {
+        max-width: 300px;
+        justify-self: center;
+    }
+
+    .header-about {
+        transform: translate(0, 0);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .header-image img {
+        transform: translate(0, 0);
+        max-width: 100%;
+    }
+
+    .header-about h1, 
+    .header-about p {
+        text-align: center;
+        transform: translate(0, 0);
+    }
+    
+    .header-icons {
+        justify-content: center;
+    }
+    
+    .header-icons img {
+        max-width: 20px;
+    }
+
+    main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-title {
+        grid-column: 1 / 2;
+    }
+
+    .section-title h2::before {
+        width: 30%; 
+    }
+    
+    .footer-image{
+        padding-top: 30px;
+    }
+    .footer-image img {
+        max-width: 50%;
+        transform: translateX(50%);
+    }
+}

@@ -1,0 +1,106 @@
+main {
+    padding: 160px 20px 80px 20px;
+    grid-row: 2 / 3;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.section-title {
+    grid-column: 1 / 4;
+}
+
+.section-title h2 {
+    color: white;
+    padding: 10px 0 0 10px;
+    position: relative; 
+    background-color: transparent;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 10%; 
+    height: 150%;
+    background-color: #3498db; 
+    transform-origin: center; 
+    z-index: -1;
+    box-shadow: 10px 10px lightblue;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 600px;
+    height: auto;
+    box-shadow: 10px 10px;
+}
+
+.block-photo {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.block-photo img {
+    max-width: 100%;
+    height: auto;
+    transform: translateY(-30%);
+}
+
+section div:nth-child(4) .block-photo img,
+section div:nth-child(5) .block-photo img  {
+    transform: translateY(-15%);
+}
+
+.block-about {
+    padding: 8px 16px;
+}
+
+.block:hover {
+    animation: 1s scaleup 2 alternate;
+    z-index: 1;
+}
+
+.block-icons {
+    display: flex;
+} 
+
+.block-icons img {
+    width: 24px;
+}
+
+.block-about > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section div:nth-child(2) .block-about,
+section div:nth-child(5) .block-about {
+    background-color: aliceblue;
+}
+section div:nth-child(3) .block-about,
+section div:nth-child(6) .block-about  {
+    background-color: #f0fff5;
+}
+section div:nth-child(4) .block-about,
+section div:nth-child(7) .block-about {
+    background-color: #fff0f8;
+}
+
+@keyframes scaleup {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
