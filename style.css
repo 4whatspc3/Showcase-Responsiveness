@@ -71,8 +71,17 @@ header::before {
     max-width: 100%;
 }
 
+a {
+    display: block;
+    width: 28px;
+}
+
 .header-icons img {
     max-width: 28px;
+}
+
+.header-icons img:hover {
+    transform: scale(1.2);
 }
 
 /* MAIN SECTION */
@@ -146,6 +155,10 @@ section div:nth-child(5) .block-photo img  {
     animation: 1s scaleup 2 alternate;
     z-index: 1;
 }
+
+.block-icons {
+    display: flex;
+} 
 
 .block-icons img {
     width: 24px;
