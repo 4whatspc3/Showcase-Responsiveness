@@ -12,6 +12,7 @@ body {
 
 /* HEADER */
 header {
+    padding-top: 20px;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -79,13 +80,15 @@ header::before {
 /* MAIN SECTION */
 
 main {
+    padding: 160px 20px 80px 20px;
     grid-row: 2 / 3;
 }
 
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 40px;
 }
 
 .section-title {
@@ -141,7 +144,7 @@ section div:nth-child(5) .block-photo img  {
 /* FOOTER */
 
 footer {
-    padding-top: 20px;
+    padding-top: 40px;
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
