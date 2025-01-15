@@ -85,7 +85,7 @@ main {
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    column-gap: 40px;
     row-gap: 40px;
 }
 
@@ -114,7 +114,6 @@ section {
 }
 
 .block {
-    
     display: flex;
     flex-direction: column;
 
@@ -143,6 +142,11 @@ section div:nth-child(5) .block-photo img  {
     padding: 8px 16px;
 }
 
+.block:hover {
+    animation: 1s scaleup 2 alternate;
+    z-index: 1;
+}
+
 .block-icons img {
     width: 24px;
 }
@@ -164,6 +168,16 @@ section div:nth-child(6) .block-about  {
 section div:nth-child(4) .block-about,
 section div:nth-child(7) .block-about {
     background-color: #fff0f8;
+}
+
+@keyframes scaleup {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 /* FOOTER */
