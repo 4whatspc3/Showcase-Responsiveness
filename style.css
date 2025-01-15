@@ -1,7 +1,15 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow-x: hidden;
 }
+
 /* HEADER */
 header {
     grid-row: 1 / 2;
@@ -137,7 +145,6 @@ footer {
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-template-rows: 600px;
 
     position: relative; 
     background-color: #3498db;
