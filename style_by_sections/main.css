@@ -3,6 +3,7 @@ main {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
+    gap: 10%;
 }
 
 section.photos {
@@ -108,11 +109,10 @@ section.photos div:nth-child(7) .block-about {
 }
 
 section.hire {
-    border: 1px solid blue ;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
-    row-gap: 40px;
+    row-gap: 100px;
 
 }
 
@@ -120,11 +120,44 @@ section.hire div:first-child {
     grid-column: 1 / 5;
 }
 
+section.hire h2 {
+    color: white;
+    padding: 10px 0 0 10px;
+    position: relative; 
+    background-color: transparent;
+}
+
+section.hire h2::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 20%; 
+    height: 150%;
+    background-color: #3498db; 
+    transform-origin: center; 
+    z-index: -1;
+    box-shadow: 10px 10px lightblue;
+}
+
 .hire-reasons {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hire-icons img {
-    max-width: 56px;
+    width: 72px;
+}
+
+.hire-icons img:hover {
+    transform: scale(1.2);
+}
+
+.hire-text {
+    text-align: center;
+}
+
+section.hire > div:nth-child(4) .hire-text p {
+    padding-top: 20px;
 }
