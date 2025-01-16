@@ -11,50 +11,61 @@
 </head>
 <body>
     <header>
-        <div class="header-image">
-            <picture>
-                <source 
-                    srcset="./Assets/mobile_vers.png"
-                    media="(max-width: 600px)"
-                />
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#my-work">My Work</a></li>
+                <li><a href="#why-hire-me">Why Hire Me?</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-                <source 
-                    srcset="./Assets/tablet_vers.png"
-                    media="(max-width: 1200px)"
-                />
-
-                <img 
-                    src="./Assets/desktop_vers.png" 
-                    alt="Baianas' typical costume, Salvador, Bahia"
-                />
-            </picture>
-        </div>
-
-        <div class="header-about">
-            <h1>About me</h1>
-            <p> Hi, I'm <span>Maria Oliveira</span>, a professional photographer based in Brazil 
-                with a passion for capturing the beauty of traditional cultures. 
-                My work focuses on telling authentic stories through images, 
-                preserving the rich heritage and unique moments of diverse communities. 
-                Every photograph is a celebration of identity, connection, and tradition. 
-                Let's create something meaningful together!
-            </p>
-            <div class="header-icons">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./Assets/instagram(1).svg" />
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
-                </a>
-                <a href="https://x.com/" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
-                </a>
+        <div class="header-real" id="about-me">
+            <div class="header-image">
+                <picture>
+                    <source 
+                        srcset="./Assets/mobile_vers.png"
+                        media="(max-width: 600px)"
+                    />
+    
+                    <source 
+                        srcset="./Assets/tablet_vers.png"
+                        media="(max-width: 1200px)"
+                    />
+    
+                    <img 
+                        src="./Assets/desktop_vers.png" 
+                        alt="Baianas' typical costume, Salvador, Bahia"
+                    />
+                </picture>
+            </div>
+    
+            <div class="header-about">
+                <h1>About me</h1>
+                <p> Hi, I'm <span>Maria Oliveira</span>, a professional photographer based in Brazil 
+                    with a passion for capturing the beauty of traditional cultures. 
+                    My work focuses on telling authentic stories through images, 
+                    preserving the rich heritage and unique moments of diverse communities. 
+                    Every photograph is a celebration of identity, connection, and tradition. 
+                    Let's create something meaningful together!
+                </p>
+                <div class="header-icons">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="./Assets/instagram(1).svg" />
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
+                    </a>
+                    <a href="https://x.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="photos">
+        <section class="photos" id="my-work">
             <div class="section-title">
                 <h2>My work</h2>
             </div>
@@ -192,7 +203,7 @@
             </div>
         </section>
 
-        <section class="hire">
+        <section class="hire" id="why-hire-me">
             <div>
                 <h2>
                     Why hire me?    
@@ -248,7 +259,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
         <div class="footer-real">
             <div class="footer-about">
                 <h2>Contact me</h2>

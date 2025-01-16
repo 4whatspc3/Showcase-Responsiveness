@@ -3,7 +3,7 @@
         row-gap: 40px;
     }
 
-    header {
+    header > div.header-real {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     }
 
@@ -87,7 +87,8 @@
         row-gap: 80px;
     }
 
-    header {
+    header > div.header-real {
+        padding-top: 40px;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
