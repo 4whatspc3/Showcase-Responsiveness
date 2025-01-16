@@ -44,7 +44,7 @@
         padding-top: 100px;
     }
 
-    section {
+    section.photos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -107,7 +107,7 @@
         padding-bottom: 0;
     }
 
-    section {
+    section.photos {
         display: grid;
         grid-template-columns: 1fr;
     }
