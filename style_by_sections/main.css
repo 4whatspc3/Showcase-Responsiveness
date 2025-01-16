@@ -109,4 +109,22 @@ section.photos div:nth-child(7) .block-about {
 
 section.hire {
     border: 1px solid blue ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+
+}
+
+section.hire div:first-child {
+    grid-column: 1 / 5;
+}
+
+.hire-reasons {
+    display: flex;
+    flex-direction: column;
+}
+
+.hire-icons img {
+    max-width: 56px;
 }
