@@ -109,6 +109,7 @@ section.photos div:nth-child(7) .block-about {
 }
 
 section.hire {
+    padding-top: 120px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
