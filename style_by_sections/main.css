@@ -64,6 +64,7 @@ section.photos div:nth-child(5) .block-photo img  {
 
 .block-about {
     padding: 8px 16px;
+    font-size: 20px;
 }
 
 .block:hover {
@@ -158,6 +159,7 @@ section.hire h2::before {
 
 .hire-text {
     text-align: center;
+    font-size: 20px;
 }
 
 section.hire > div:nth-child(4) .hire-text p {
