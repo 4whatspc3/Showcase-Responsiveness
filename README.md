@@ -5,8 +5,7 @@ This project focuses on building a responsive homepage, similar to what you migh
 
 The image located in the section "About me" was found on ["Pexels.com"](https://www.pexels.com/photo/woman-in-traditional-dress-taking-photo-18043620/). The author is [Leonardo Dourado](https://www.pexels.com/@leonardodourado/).
 
-The images located in the section "My work" were found on ["Pexels.com"](https://www.pexels.com/). From left to right and top to bottom, the source and author: 
-
+The images located in the section "My work" were found on ["Pexels.com"](https://www.pexels.com/). From left to right and top to bottom, the source and author:
     -  [Image 01](https://www.pexels.com/photo/colorful-brazilian-wish-ribbons-in-salvador-29538732/) - [Giovanni lucas](https://www.pexels.com/@giovanni-lucas-ft-274856035/);
     -  [Image 02](https://www.pexels.com/photo/leather-sandals-display-in-salvador-market-29354988/) - [Almir reis](https://www.pexels.com/@almir-reis-1982745319/);
     -  [Image 03](https://www.pexels.com/pt-br/foto/cusco-sokak-gecit-toreni-nde-geleneksel-peru-dansi-29504982/) - [Marco Alhelm](https://www.pexels.com/pt-br/@marco-alhelm-1479977387/);
